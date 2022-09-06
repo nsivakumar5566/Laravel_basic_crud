@@ -27,7 +27,8 @@ class PostController extends Controller
         ]);
          
         $file = $request->file('image');
-        $filename = $file->getClientOriginalName();
+        $timestamp = strtotime("now");
+        $filename = $timestamp . '-' . $file->getClientOriginalName();
         $file->move(public_path('images/clients-img'), $filename);
         //Post::create($request->all());
     
@@ -61,9 +62,10 @@ class PostController extends Controller
         ]);
 
         if ($request->image) {
-            unlink("images/clients-img/" . $path);
+            unlink("images/clients-img/".$path);
             $file = $request->file('image');
-            $filename = $file->getClientOriginalName();
+            $timestamp = strtotime("now");
+            $filename = $timestamp . '-' . $file->getClientOriginalName();
             $file->move(public_path('images/clients-img'), $filename);
         }
 

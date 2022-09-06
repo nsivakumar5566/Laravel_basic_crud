@@ -33,7 +33,7 @@
         <div class="mb-3">
         <label for="desc" class="form-label">Ages</label>
         <select class="form-select" aria-label="Default select example" name="age">
-          <option selected>Open this select menu</option>
+          <option value="">Open this select menu</option>
           <option value="One">One</option>
           <option value="Two">Two</option>
           <option value="Three">Three</option>
