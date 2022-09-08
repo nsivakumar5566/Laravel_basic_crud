@@ -41,6 +41,9 @@ class PostController extends Controller
 
         return redirect()->route('postindex')
             ->with('success', 'Post created successfully.');
+     
+           
+            
     }
 
     public function view($id){

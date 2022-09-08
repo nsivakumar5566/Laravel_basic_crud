@@ -4,6 +4,12 @@
 
   <div class="conatiner mt-5">
     <div class="row">
+
+       @if (session()->has('success'))
+        <div class="alert alert-success">
+            {{ session('success') }}
+        </div>
+    @endif
       <div class="col-lg-6 offset-lg-3">
       <form enctype="multipart/form-data" action="{{ route('poststore') }}" method="POST">
         @csrf
