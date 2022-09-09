@@ -27,6 +27,10 @@
 
         </select>
        </div>
+       <div class="mb-3">
+          <label for="name" class="form-label">Pay:</label>
+          <input type="text" class="form-control" id="paid" name="paid" value="{{ $viewpost->paid }}" disabled>
+        </div>
       </div>
      
     </div>

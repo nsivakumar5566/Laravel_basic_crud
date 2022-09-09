@@ -37,8 +37,14 @@
 
         </select>
        </div>
+       <div class="mb-3">
+          <label for="name" class="form-label">Pay:</label>
+          <input type="text" class="form-control" id="paid" name="paid" value="{{ $editpost->paid }}" >
+        </div>
         <button type="submit" class="btn btn-primary w-100">Update Post</button>
       </form>
+      </div>
+   
       </div>
     </div>
   </div>

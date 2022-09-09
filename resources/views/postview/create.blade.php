@@ -55,6 +55,16 @@
        
         @endif
        </div>
+
+       <div class="mb-3">
+          <label for="name" class="form-label">Pay</label>
+          <input type="text" class="form-control" id="paid" name="paid">
+          @if ($errors->has('paid'))
+          
+            <span class="error" style="color:red;">{{ $errors->first('paid') }}</span>
+          
+          @endif
+        </div>
         <button type="submit" class="btn btn-primary w-100">Create Post</button>
       </form>
       </div>

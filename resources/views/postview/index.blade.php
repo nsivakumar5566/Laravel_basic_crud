@@ -30,6 +30,7 @@
               <th>Description</th>
               <th>Images</th>
               <th>Ages</th>
+              <th>Pay</th>
               <th>Action</th>
             </tr>
           </thead>
@@ -41,6 +42,7 @@
               <td>{{$value->description}}</td>
              <td><img src="{{ asset('images/clients-img/'.$value->path) }}" alt="" width="150px"></td>
              <td>{{$value->age}}</td>
+             <td>{{$value->paid}}</td>
              <td class="text-center">
                     <a href="{{ route('postview', $value->id) }}" class="btn btn-primary">
                       <i class="fa fa-eye"></i>

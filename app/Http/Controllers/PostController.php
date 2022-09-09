@@ -20,7 +20,7 @@ class PostController extends Controller
     public function store(Request $request){
 
         $request->validate([
-            'name' => 'required',
+            'name' => 'required|unique:posts',
             'description' => 'required',
             'image' => 'required|image|mimes:jpg,png,jpeg,gif,svg|max:2048',
             'age' => 'required',
@@ -37,6 +37,7 @@ class PostController extends Controller
         $post->description = $request->description;
         $post->path = $filename;
         $post->age = $request->age;
+        $post->paid = $request->paid;
         $post->save();
 
         return redirect()->route('postindex')
@@ -78,6 +79,7 @@ class PostController extends Controller
         $post->name = $request->name;
         $post->description = $request->description;
         $post->age = $request->age;
+        $post->paid = $request->paid;
         if ($request->image) {
             $post->path = $filename;
         }
