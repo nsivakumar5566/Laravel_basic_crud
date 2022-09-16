@@ -45,9 +45,9 @@
         <label for="desc" class="form-label">Ages</label>
         <select class="form-select" aria-label="Default select example" name="age">
           <option value="">Open this select menu</option>
-          <option value="One">One</option>
-          <option value="Two">Two</option>
-          <option value="Three">Three</option>
+          <option value="one">One</option>
+          <option value="two">Two</option>
+          <option value="three">Three</option>
         </select>
         @if ($errors->has('age'))
         

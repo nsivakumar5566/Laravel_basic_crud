@@ -21,9 +21,9 @@
         <label for="desc" class="form-label">Ages:</label>
         <select class="form-select" aria-label="Default select example" name="age"  disabled>
           <option value="">Open this select menu</option>
-          <option {{ $viewpost->age == 'One' ? 'selected':'' }}>One</option>
-          <option {{ $viewpost->age == 'Two' ? 'selected':'' }}>Two</option>
-          <option {{ $viewpost->age == 'Three' ? 'selected':'' }}>Three</option>
+          <option value="one" {{ $viewpost->age == 'one' ? 'selected':'' }}>One</option>
+          <option value="two" {{ $viewpost->age == 'two' ? 'selected':'' }}>Two</option>
+          <option value="three" {{ $viewpost->age == 'three' ? 'selected':'' }}>Three</option>
 
         </select>
        </div>

@@ -9,7 +9,10 @@ use File;
 class PostController extends Controller
 {
     public function index() {
+
+        // $posts = Post::where('id','4')->first();
         $posts = Post::all();
+        //echo '<pre>';print_r($posts);exit;
         return view('postview.index',compact('posts'))->with('i');
     }
 

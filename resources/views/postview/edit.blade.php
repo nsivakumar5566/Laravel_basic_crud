@@ -31,9 +31,9 @@
         <label for="desc" class="form-label">Ages</label>
         <select class="form-select" aria-label="Default select example" name="age" >
           <option value="">Open this select menu</option>
-          <option {{ $editpost->age == 'One' ? 'selected':'' }}>One</option>
-          <option {{ $editpost->age == 'Two' ? 'selected':'' }}>Two</option>
-          <option {{ $editpost->age == 'Three' ? 'selected':'' }}>Three</option>
+          <option value="one" {{ $editpost->age == 'one' ? 'selected':'' }}>One</option>
+          <option value="two" {{ $editpost->age == 'two' ? 'selected':'' }}>Two</option>
+          <option value="three" {{ $editpost->age == 'three' ? 'selected':'' }}>Three</option>
 
         </select>
        </div>
